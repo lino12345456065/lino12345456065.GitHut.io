@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #503e3e;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.todo-container {
+  background: #886d6d;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Título */
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f0efef;
+}
+
+/* Grupo de entrada */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 15px;
+  font-size: 19px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+#addTaskBtn {
+  padding: 10px 20px;
+  background-color: #9c967cb4;
+  color: rgb(235, 210, 210);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addTaskBtn:hover {
+  background-color: #2d5d8d;
+}
+
+/* Lista de tareas */
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: #aaa;
+  background-color: #e0e0e0;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.task-actions button:hover {
+  color: #007bff;
+}
+
